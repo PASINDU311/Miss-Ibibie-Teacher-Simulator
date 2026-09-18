@@ -1,8 +1,8 @@
 const markingPapers = [
   {
     id: 1,
-    student: "Senu",
-    emoji: "👦",
+    student: "golaya",
+    emoji: "👧",
     question: "What is 2 + 2?",
     answer: "22",
     correctAnswer: "4",
@@ -12,7 +12,7 @@ const markingPapers = [
 
   {
     id: 2,
-    student: "Kavi",
+    student: "bims",
     emoji: "👧",
     question: "What is the capital of Sri Lanka?",
     answer: "My house",
@@ -23,8 +23,8 @@ const markingPapers = [
 
   {
     id: 3,
-    student: "Ravi",
-    emoji: "👦",
+    student: "katumaris",
+    emoji: "👧",
     question: "Why should we study?",
     answer: "Because Miss said so.",
     correctAnswer: "To learn and develop knowledge",
@@ -34,8 +34,8 @@ const markingPapers = [
 
   {
     id: 4,
-    student: "Dinu",
-    emoji: "👦",
+    student: "kota jeewiya",
+    emoji: "👧",
     question: "Complete the sentence: I am a ______ student.",
     answer: "Very handsome",
     correctAnswer: "Good",
@@ -45,7 +45,7 @@ const markingPapers = [
 
   {
     id: 5,
-    student: "Nethu",
+    student: "sewwandi meniyo",
     emoji: "👧",
     question: "What should you do when you don't understand a lesson?",
     answer: "Ask the teacher for help.",

@@ -23,7 +23,7 @@ function Home() {
         </p>
 
         <h1>
-          MISS <span>IBIBIE</span>
+          MISS <span>IBBE</span>
         </h1>
 
         <h2>Teacher Simulator</h2>

@@ -61,7 +61,7 @@ function FirstDay() {
         <div className="classroom-preview">
           <div className="board">
             <span>WELCOME</span>
-            <strong>MISS IBIBIE 👩‍🏫</strong>
+            <strong>MISS IBBI 👩‍🏫</strong>
           </div>
 
           <div className="desks">

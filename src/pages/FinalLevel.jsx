@@ -23,7 +23,7 @@ function FinalLevel() {
         </h1>
 
         <p className="final-subtitle">
-          Congratulations, Miss Ibibie! ✨
+          Congratulations, Miss Ibbi! ✨
         </p>
 
         {/* Result Card */}
