@@ -1,0 +1,207 @@
+:root {
+  font-family: "Poppins", sans-serif;
+
+  color: #29263d;
+  background: #fff8fc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-primary: #8b5cf6;
+  --color-primary-dark: #6d3fd1;
+
+  --color-pink: #f472b6;
+  --color-pink-light: #fce7f3;
+
+  --color-blue: #60a5fa;
+  --color-blue-light: #dbeafe;
+
+  --color-yellow: #facc15;
+  --color-yellow-light: #fef3c7;
+
+  --color-green: #34d399;
+  --color-green-light: #d1fae5;
+
+  --color-background: #fff8fc;
+  --color-surface: #ffffff;
+
+  --color-text: #29263d;
+  --color-text-light: #6b6880;
+
+  --color-border: #eee7f4;
+
+  --shadow-soft: 0 10px 30px rgba(80, 55, 100, 0.08);
+  --shadow-card: 0 15px 40px rgba(80, 55, 100, 0.12);
+
+  --radius-small: 12px;
+  --radius-medium: 20px;
+  --radius-large: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  margin: 0;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(244, 114, 182, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(139, 92, 246, 0.12),
+      transparent 30%
+    ),
+    var(--color-background);
+
+  color: var(--color-text);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Main heading font */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Baloo 2", sans-serif;
+}
+
+/* Selection */
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8cce8;
+  border-radius: 20px;
+}
+
+/* Reusable animation */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.pop-in {
+  animation: popIn 0.4s ease forwards;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  :root {
+    --radius-large: 24px;
+    --radius-medium: 16px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
